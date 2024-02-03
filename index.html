@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Surprise</title>
+</head>
+
+<body>
+    <div id="hello-page" class="centered">
+        <h1 class="text-color">Hello :3</h1>
+        <button onclick="homePageClick('continue')">Continue</button>
+    </div>
+    <div id="main-content" class = "hidden centered">
+        <h1 class="text-color">Will you be my Valentine?</h1>
+        <div class="buttons-container">
+            <button id="yes-button" class="yes-button" onclick="chooseOption('yes')">Yes</button>
+            <button id="no-button" class="no-button" onmouseover="moveButton()" onclick="chooseOption('no')">No</button>
+        </div>
+    </div>
+
+    <img id=sad-cat src="imgs/sad-cat.gif" alt="Sad cat" class="sad-cat">
+    <img id=emoji src="imgs/emoji.gif" alt="emoji" class="emoji">
+
+    <div id="yes-content" class="hidden centered">
+        <img src="imgs/loveu.png" alt="I Love You Image" class="love-image">
+        <div id="video-container">
+            <iframe id="youtube-video" frameborder="0"></iframe>
+        </div>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="no-content" class="hidden centered">
+        <h1 class="text-color">Impossible :P</h1>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+
+    <div id="video-container" class="hidden centered">
+        <iframe id="youtube-video" frameborder="0"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

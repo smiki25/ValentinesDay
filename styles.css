@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffc0cb;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#main-content {
+    height: 100%;
+    width: 100%;
+}
+
+.centered {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 45vh;
+}
+
+.buttons-container {
+    display: flex;
+    margin: 0 15px;
+}
+
+button {
+    padding: 15px 37px;
+    font-size: 18px;
+    background-color: #FF7F7F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 35px;
+}
+
+button:hover {
+    background-color: #ff5b5b;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-color {
+    color: #777;
+}
+
+#youtube-video {
+    width: 560px;
+    height: 315px;
+}
+
+.love-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#yes-content {
+    top: 23vh !important;
+}
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.sad-cat {
+    position: absolute;
+    left: 70vw;
+    top: 6vh;
+    opacity: 0; 
+    transition: opacity 1.5s ease;
+}
+
+.emoji {
+    position: absolute;
+    width: 23%;
+    left: 70vw;
+    top: 50vh;
+    opacity: 0; 
+    transition: opacity 5s ease;
+}
+
